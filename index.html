@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gilbert | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0c0c0c;
+      color: #e0f7ff;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    nav {
+      background: #111;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      color: #00bfff;
+      border-bottom: 2px solid #00bfff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #00bfff;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #00bfff;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 10px auto;
+    }
+
+    .hero-buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: #00bfff;
+      color: #0c0c0c;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0099cc;
+      color: white;
+    }
+
+    .btn.outline {
+      background: transparent;
+      border: 2px solid #00bfff;
+      color: #00bfff;
+    }
+
+    .btn.outline:hover {
+      background: #00bfff;
+      color: #0c0c0c;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      margin-top: 80px;
+    }
+
+    footer a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="assets/cool.jpg" alt="Gilbert Kingori" class="profile-pic" />
+    <h1>Hello, I'm Gilbert King'ori</h1>
+    <p>“Hi there, and welcome to my portfolio.
+I'm Gilbert King'ori — a frontend developer from Kenya who loves building clean, fast, and interactive websites.
+
+My passion is turning ideas into beautiful digital experiences using HTML, CSS, and JavaScript. Whether it's a landing page, a responsive site, or a fun little web app, I enjoy creating things that work and look great.
+
+I believe in continuous learning, solving real problems through code, and always improving my craft.
+Feel free to explore my projects, get to know me better, or reach out if you'd like to work together.
+
+Thanks for stopping by — let’s build something awesome!”</p>
+    <div class="hero-buttons">
+      <a href="work.html" class="btn">View My Work</a>
+      <a href="contact.html" class="btn outline">Get in Touch</a>
+      <a href="assets/Gilbert_Kingori_Resume_Full (1).odt" class="btn" download>Download Resume</a>
+    </div>
+  </section>
+
+
+  <script src="js/main.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json');
+  </script>
+</body>
+</html>
